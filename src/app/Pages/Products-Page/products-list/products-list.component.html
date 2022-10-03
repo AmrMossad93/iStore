@@ -1,0 +1,18 @@
+<app-card [title]="'Product List'" [subtitle]="'List'">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">AfterDiscount</th>
+      <th scope="col">BeforeDiscount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products.payload.products">
+      <td>{{product.name}}</td>
+      <td>{{product.priceAfterDiscount}}</td>
+      <td>{{product.priceBeforeDiscount}}</td>
+    </tr>
+    </tbody>
+  </table>
+</app-card>

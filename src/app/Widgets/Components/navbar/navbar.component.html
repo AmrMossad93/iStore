@@ -1,0 +1,10 @@
+<mat-toolbar [color]="'primary'">
+  <span>IStore</span>
+  <span class="example-spacer"></span>
+  <button routerLink="/home" mat-button>Home</button>
+  <button mat-button [matMenuTriggerFor]="catalogueMenu">Catalogues</button>
+</mat-toolbar>
+<mat-menu #catalogueMenu="matMenu">
+  <button mat-menu-item *ngFor="let catalogue of catalogueList"
+         (click)="onNavigateToProductList(catalogue.catalogueId)" >{{catalogue.catalogueName}}</button>
+</mat-menu>
