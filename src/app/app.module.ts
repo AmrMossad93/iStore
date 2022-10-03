@@ -8,6 +8,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {httpInterceptorsProviders} from "./Core/Interceptors";
 import {NgxSpinnerModule} from "ngx-spinner";
 import { GraphQLModule } from './Core/Models/GraphQL/graphql.module';
+import {Apollo} from "apollo-angular";
 @NgModule({
   declarations: [
     AppComponent
@@ -22,6 +23,7 @@ import { GraphQLModule } from './Core/Models/GraphQL/graphql.module';
   ],
   providers: [
     httpInterceptorsProviders,
+    Apollo
   ],
   bootstrap: [AppComponent]
 })

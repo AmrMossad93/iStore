@@ -21,7 +21,7 @@ const defaultOptions: DefaultOptions = {
 };
 
 // url
-let uri = `${environment.apiEndPoint}/graphql`
+let uri = `${environment.apiEndPoint}graphql`
 
 // if (!environment.production) {
 //   uri = `${environment.API_BASE_URL}/graphql`; // <-- add the URL of the GraphQL server here
