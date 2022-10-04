@@ -12,13 +12,17 @@ const routes: Routes = [
     },
     children: [
       {
+        path: '',
+        loadChildren: () => import('../../../Pages/Home-Page/home-page.module').then(module => module.HomePageModule)
+      },
+      {
         path: 'products',
         loadChildren: () => import('../../../Pages/Products-Page/products.module').then(module => module.ProductsModule)
       },
       {
-        path: '',
-        loadChildren: () => import('../../../Pages/Home-Page/home-page.module').then(module => module.HomePageModule)
-      },
+        path: 'cart',
+        loadChildren: () => import('../../../Pages/Cart-Page/cart.module').then(module => module.CartModule)
+      }
     ]
   }
 ];

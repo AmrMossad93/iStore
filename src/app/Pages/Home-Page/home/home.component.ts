@@ -9,13 +9,10 @@ import {GET_CARTS} from "../../../Core/Models/GraphQL/Queries/GetCarts";
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private graphQLService: GraphQLService) {
+  constructor() {
   }
 
   ngOnInit(): void {
-    this.graphQLService.get(GET_CARTS).subscribe((res: any) => {
-      console.log(res)
-    })
   }
 
 }
