@@ -28,6 +28,6 @@ export const GET_CARTS: QueryOptions = {
     }
   `,
   variables: {
-    filter: {limit: 10, offset: 0, consumerEmail: "karim@gmail.com"}
+    filter: {limit: 10, offset: 0, consumerEmail: "bawadi@ejada.com"}
   }
 }
