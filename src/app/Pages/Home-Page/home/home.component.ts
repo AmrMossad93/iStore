@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {GraphQLService} from "../../../Core/Services/GraphQL/graph-ql.service";
+import {GET_CARTS} from "../../../Core/Models/GraphQL/Queries/GetCarts";
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,9 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.graphQLService.get()
+    this.graphQLService.get(GET_CARTS).subscribe((res: any) => {
+      console.log(res)
+    })
   }
 
 }
