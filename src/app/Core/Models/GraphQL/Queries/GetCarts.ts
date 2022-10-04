@@ -10,7 +10,7 @@ export const GET_CARTS: QueryOptions = {
         carts {
           catalogue {
             id
-            id
+            nameEn
           }
           consumer {
             id
@@ -20,6 +20,7 @@ export const GET_CARTS: QueryOptions = {
           cartItems {
             product {
               id
+              name
             }
           }
         }

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {GraphQLService} from "../../../Core/Services/GraphQL/graph-ql.service";
-import {GET_CARTS} from "../../../Core/Models/GraphQL/Queries/GetCarts";
-import {CartService} from "../../../Widgets/Services/Cart/cart.service";
+import {ActivatedRoute} from "@angular/router";
+import {ApolloQueryResult} from "@apollo/client/core";
+import {ICart} from "../../../Widgets/Model/Interface/Cart/cart";
 
 @Component({
   selector: 'app-cart',
@@ -9,13 +9,15 @@ import {CartService} from "../../../Widgets/Services/Cart/cart.service";
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
+  cartList = {} as ApolloQueryResult<ICart>;
 
-  constructor(private cartService: CartService) {
+  constructor(private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.cartService.getCartList().subscribe(res => {
-      console.log(res.data.getCarts.carts)
+    this.activatedRoute.data.subscribe(res => {
+      this.cartList = res['cartList'];
+      console.log(this.cartList)
     })
   }
 
