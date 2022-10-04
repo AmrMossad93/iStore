@@ -9,6 +9,8 @@ import {httpInterceptorsProviders} from "./Core/Interceptors";
 import {NgxSpinnerModule} from "ngx-spinner";
 import { GraphQLModule } from './Core/Models/GraphQL/graphql.module';
 import {Apollo} from "apollo-angular";
+import {MatSnackBar} from "@angular/material/snack-bar";
+import {Overlay} from "@angular/cdk/overlay";
 @NgModule({
   declarations: [
     AppComponent
@@ -23,7 +25,9 @@ import {Apollo} from "apollo-angular";
   ],
   providers: [
     httpInterceptorsProviders,
-    Apollo
+    Apollo,
+    MatSnackBar,
+    Overlay
   ],
   bootstrap: [AppComponent]
 })
