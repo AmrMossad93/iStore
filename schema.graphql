@@ -1,0 +1,96 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: Query
+}
+
+type CartDTO {
+  cartItems: [CartItemDTO]
+  catalogue: CatalogueDTO
+  consumer: ConsumerDTO
+  expirationDate: String
+  id: Long
+  totals: Totals
+}
+
+type CartItemDTO {
+  product: ProductDTO
+}
+
+type CartResponseGraph {
+  carts: [CartDTO]
+  totalItems: Long
+  totalPages: Int
+}
+
+type CatalogueDTO {
+  catalogueId: Long
+  id: Long
+  nameAr: String
+  nameEn: String
+}
+
+type CatalogueResponseGraph {
+  catalogues: [CatalogueDTO]
+  totalItems: Long
+  totalPages: Int
+}
+
+type ConsumerDTO {
+  email: String
+  id: Long
+  name: String
+}
+
+type ProductDTO {
+  id: Long
+  name: String
+  nameAr: String
+  priceAfterDiscount: Float
+  priceBeforeDiscount: Float
+  productCode: String
+  productId: String
+  quantity: Int
+  totals: Totals
+}
+
+type ProductResponseGraph {
+  products: [ProductDTO]
+  totalItems: Long
+  totalPages: Int
+}
+
+type Query {
+  getCarts(filter: CartFilter): CartResponseGraph
+  getCatalogues(filter: CatalogueFilter): CatalogueResponseGraph
+  getProducts(filter: ProductFilter): ProductResponseGraph
+}
+
+type Totals {
+  discount: Float
+  subTotal: Float
+  total: Float
+}
+
+"Long type"
+scalar Long
+
+input CartFilter {
+  consumerEmail: String!
+  erpCatalogueId: Long
+  id: Long
+  limit: Int!
+  offset: Int!
+}
+
+input CatalogueFilter {
+  id: Long
+  limit: Int!
+  offset: Int!
+}
+
+input ProductFilter {
+  id: Long
+  limit: Int!
+  offset: Int!
+}
