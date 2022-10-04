@@ -16,6 +16,7 @@ export interface ICartDataList {
 
 export interface ICartDataListCatalogue {
   id: number;
+  nameEn:string;
 }
 
 export interface ICartDataListConsumer {

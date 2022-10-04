@@ -1,1 +1,22 @@
-<p>cart works!</p>
+<app-card [title]="'Cart List'" [subtitle]="'You Have ' + cartList.data.getCarts.totalItems + ' Item In Your Cart'">
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let cart of cartList.data.getCarts.carts">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{cart.consumer.name}}
+        </mat-panel-title>
+        <mat-panel-description>
+          Catalogue : {{cart.catalogue.nameEn}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+     <div class="row">
+       <div class="col-md-3" *ngFor="let product of cart.cartItems">
+         <div class="alert alert-light" role="alert">
+           {{product.product.name}}
+         </div>
+       </div>
+     </div>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</app-card>
