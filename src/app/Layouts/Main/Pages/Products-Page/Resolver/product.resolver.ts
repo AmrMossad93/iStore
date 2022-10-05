@@ -5,7 +5,7 @@ import {
 } from '@angular/router';
 import {Observable, of} from 'rxjs';
 import {ProductsService} from "../Service/products.service";
-import {IBaseData} from "../../../Core/Models/Interface/Base/base-data";
+import {IBaseData} from "../../../../../Core/Models/Interface/Base/base-data";
 import {IProduct} from "../Model/Interface/product";
 
 @Injectable({

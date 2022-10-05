@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {GraphQLService} from "../../../Core/Services/GraphQL/graph-ql.service";
+import {GraphQLService} from "../../../../../Core/Services/GraphQL/graph-ql.service";
 import {GET_CARTS} from "../Model/Query/GetCarts";
 import {Observable} from 'rxjs';
 import {ApolloQueryResult} from "@apollo/client/core";

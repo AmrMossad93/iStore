@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
-import {DataService} from "../../../Core/Services/Data/data.service";
+import {DataService} from "../../../../../Core/Services/Data/data.service";
 import {Observable} from "rxjs";
 import {IProduct, IProductOBJ} from "../Model/Interface/product";
-import {IBaseData} from "../../../Core/Models/Interface/Base/base-data";
+import {IBaseData} from "../../../../../Core/Models/Interface/Base/base-data";
 import {PRODUCT_API_NAME} from "../Model/Constant/PRODUCT_API_NAME";
 
 @Injectable({

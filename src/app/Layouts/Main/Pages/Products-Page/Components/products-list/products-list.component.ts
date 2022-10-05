@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {IBaseData} from "../../../../Core/Models/Interface/Base/base-data";
+import {IBaseData} from "../../../../../../Core/Models/Interface/Base/base-data";
 import {IProduct} from "../../Model/Interface/product";
 
 @Component({

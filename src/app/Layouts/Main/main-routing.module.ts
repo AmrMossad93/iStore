@@ -13,15 +13,15 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('../../Pages/Home-Page/home-page.module').then(module => module.HomePageModule)
+        loadChildren: () => import('./Pages/Home-Page/home-page.module').then(module => module.HomePageModule)
       },
       {
         path: 'products',
-        loadChildren: () => import('../../Pages/Products-Page/products.module').then(module => module.ProductsModule)
+        loadChildren: () => import('./Pages/Products-Page/products.module').then(module => module.ProductsModule)
       },
       {
         path: 'cart',
-        loadChildren: () => import('../../Pages/Cart-Page/cart.module').then(module => module.CartModule)
+        loadChildren: () => import('./Pages/Cart-Page/cart.module').then(module => module.CartModule)
       }
     ]
   }
