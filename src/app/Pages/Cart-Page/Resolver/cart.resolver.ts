@@ -5,9 +5,9 @@ import {
   ActivatedRouteSnapshot
 } from '@angular/router';
 import {Observable, of} from 'rxjs';
-import {CartService} from "../../Services/Cart/cart.service";
+import {CartService} from "../Service/cart.service";
 import {ApolloQueryResult} from "@apollo/client/core";
-import {ICart} from "../../Model/Interface/Cart/cart";
+import {ICart} from "../Model/Interface/cart";
 
 @Injectable({
   providedIn: 'root'

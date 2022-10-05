@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
 import {GraphQLService} from "../../../Core/Services/GraphQL/graph-ql.service";
-import {GET_CARTS} from "../../../Core/Models/GraphQL/Queries/GetCarts";
+import {GET_CARTS} from "../Model/Query/GetCarts";
 import {Observable} from 'rxjs';
 import {ApolloQueryResult} from "@apollo/client/core";
-import {ICart} from "../../Model/Interface/Cart/cart";
+import {ICart} from "../Model/Interface/cart";
 
 @Injectable({
   providedIn: 'root'

@@ -7,7 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from "@angular/common/http";
 import {httpInterceptorsProviders} from "./Core/Interceptors";
 import {NgxSpinnerModule} from "ngx-spinner";
-import { GraphQLModule } from './Core/Models/GraphQL/graphql.module';
+import { GraphQLModule } from './Core/Modules/GraphQL/graphql.module';
 import {Apollo} from "apollo-angular";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {Overlay} from "@angular/cdk/overlay";

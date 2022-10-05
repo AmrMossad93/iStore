@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {ApolloQueryResult} from "@apollo/client/core";
-import {ICart} from "../../../Widgets/Model/Interface/Cart/cart";
+import {ICart} from "../../Model/Interface/cart";
 
 @Component({
   selector: 'app-cart',

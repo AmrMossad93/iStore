@@ -4,9 +4,9 @@ import {
   ActivatedRouteSnapshot
 } from '@angular/router';
 import {Observable, of} from 'rxjs';
-import {ProductsService} from "../../Services/Products/products.service";
+import {ProductsService} from "../Service/products.service";
 import {IBaseData} from "../../../Core/Models/Interface/Base/base-data";
-import {IProduct} from "../../Model/Interface/Product/product";
+import {IProduct} from "../Model/Interface/product";
 
 @Injectable({
   providedIn: 'root'
