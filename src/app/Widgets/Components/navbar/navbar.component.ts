@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ICatalogueList} from "../../Model/Interface/Catalogue/catalogue";
+import {ICatalogueList} from "../../../Layouts/Main/Model/Interface/catalogue";
 import {Router} from "@angular/router";
 
 @Component({

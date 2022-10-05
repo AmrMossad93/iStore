@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {MainComponent} from "./main/main.component";
-import {CatalogueResolver} from "../../../Widgets/Resolvers/Catalogue/catalogue.resolver";
+import {MainComponent} from "./Component/main/main.component";
+import {CatalogueResolver} from "./Resolver/catalogue.resolver";
 
 const routes: Routes = [
   {
@@ -13,15 +13,15 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('../../../Pages/Home-Page/home-page.module').then(module => module.HomePageModule)
+        loadChildren: () => import('../../Pages/Home-Page/home-page.module').then(module => module.HomePageModule)
       },
       {
         path: 'products',
-        loadChildren: () => import('../../../Pages/Products-Page/products.module').then(module => module.ProductsModule)
+        loadChildren: () => import('../../Pages/Products-Page/products.module').then(module => module.ProductsModule)
       },
       {
         path: 'cart',
-        loadChildren: () => import('../../../Pages/Cart-Page/cart.module').then(module => module.CartModule)
+        loadChildren: () => import('../../Pages/Cart-Page/cart.module').then(module => module.CartModule)
       }
     ]
   }

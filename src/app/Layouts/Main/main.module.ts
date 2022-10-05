@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MainRoutingModule } from './main-routing.module';
-import { MainComponent } from './main/main.component';
-import {WidgetsModule} from "../../../Widgets/widgets.module";
+import { MainComponent } from './Component/main/main.component';
+import {WidgetsModule} from "../../Widgets/widgets.module";
 
 
 @NgModule({

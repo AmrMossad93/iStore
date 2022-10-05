@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: () => import('./Core/Layouts/Main/main.module').then(module => module.MainModule)
+    loadChildren: () => import('./Layouts/Main/main.module').then(module => module.MainModule)
   }
 ];
 

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {IBaseData} from "../../../Models/Interface/Base/base-data";
-import {ICatalogue} from "../../../../Widgets/Model/Interface/Catalogue/catalogue";
+import {IBaseData} from "../../../../Core/Models/Interface/Base/base-data";
+import {ICatalogue} from "../../Model/Interface/catalogue";
 
 @Component({
   selector: 'app-main',

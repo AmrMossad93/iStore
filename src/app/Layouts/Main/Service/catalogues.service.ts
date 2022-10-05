@@ -1,9 +1,10 @@
 import {Injectable} from '@angular/core';
 import {DataService} from "../../../Core/Services/Data/data.service";
 import {map, Observable, shareReplay} from "rxjs";
-import {API_NAME} from "../../../Core/Models/Static/API_NAME";
 import {IBaseData} from "../../../Core/Models/Interface/Base/base-data";
-import {ICatalogue} from "../../Model/Interface/Catalogue/catalogue";
+import {ICatalogue} from "../Model/Interface/catalogue";
+import {CATALOGUE_API_NAME} from "../Model/Constant/CATALOGUE_API_NAME";
+
 @Injectable({
   providedIn: 'root'
 })
@@ -13,6 +14,6 @@ export class CataloguesService {
   }
 
   getCatalogueList(): Observable<IBaseData<ICatalogue>> {
-    return this.dataService.get(API_NAME.catalogue.list)
+    return this.dataService.get(CATALOGUE_API_NAME.list)
   }
 }
