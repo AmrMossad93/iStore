@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import {AngularMaterialModule} from "../Core/DesignModules/angular-material.module";
 import {RouterLink, RouterLinkActive} from "@angular/router";
-import { CardComponent } from './ReUsable/card/card.component';
+import { CardComponent } from './Components/card/card.component';
 
 
 
