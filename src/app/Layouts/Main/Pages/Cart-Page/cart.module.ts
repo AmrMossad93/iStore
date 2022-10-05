@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CartRoutingModule } from './cart-routing.module';
 import { CartComponent } from './Components/cart/cart.component';
-import {WidgetsModule} from "../../../../Widgets/widgets.module";
+import {SharedModule} from "../../../../Shared/shared.module";
 import {AngularMaterialModule} from "../../../../Core/DesignModules/angular-material.module";
 
 
@@ -14,7 +14,7 @@ import {AngularMaterialModule} from "../../../../Core/DesignModules/angular-mate
   imports: [
     CommonModule,
     CartRoutingModule,
-    WidgetsModule,
+    SharedModule,
     AngularMaterialModule
   ]
 })

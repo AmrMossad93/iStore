@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HomePageRoutingModule } from './home-page-routing.module';
 import { HomeComponent } from './home/home.component';
-import {WidgetsModule} from "../../../../Widgets/widgets.module";
+import {SharedModule} from "../../../../Shared/shared.module";
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import {WidgetsModule} from "../../../../Widgets/widgets.module";
   imports: [
     CommonModule,
     HomePageRoutingModule,
-    WidgetsModule
+    SharedModule
   ]
 })
 export class HomePageModule { }

@@ -23,4 +23,4 @@ import { CardComponent } from './Components/card/card.component';
     RouterLinkActive
   ]
 })
-export class WidgetsModule { }
+export class SharedModule { }
