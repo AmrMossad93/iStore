@@ -19,7 +19,7 @@ export class CartService {
 
   getNewCartList(): Observable<ApolloQueryResult<ICart>> {
     let filter = {
-      filter:{limit: 10, offset: 0, consumerEmail: "karim@gmail.com"}
+      filter: {limit: 10, offset: 0, consumerEmail: "karim@gmail.com"}
     }
     return this.graphQLService.getWithParams(GET_NEW_CARTS, filter)
   }
