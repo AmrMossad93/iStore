@@ -17,6 +17,6 @@ export class CartResolver implements Resolve<ApolloQueryResult<ICart>> {
   }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<ApolloQueryResult<ICart>> {
-    return this.cartService.getCartList()
+    return this.cartService.getNewCartList();
   }
 }
