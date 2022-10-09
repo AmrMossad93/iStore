@@ -13,15 +13,12 @@ import {map} from "rxjs";
 export class CartComponent implements OnInit {
   cartList = {} as ApolloQueryResult<ICart>;
 
-  constructor(private activatedRoute: ActivatedRoute, private cartService: CartService) {
+  constructor(private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(res => {
       this.cartList = res['cartList'];
-    })
-    this.cartService.getNewCartList().subscribe(res => {
-      console.log(res)
     })
   }
 
